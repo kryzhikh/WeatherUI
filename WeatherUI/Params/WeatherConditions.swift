@@ -45,53 +45,48 @@ extension WeatherConditions {
             return "It's windy"
         }
     }
-    var imageName: String {
-        switch self {
-        case .clearSky:
-            return "sun_35"
-        case .partlyCloudy:
-            return "cloudy_35"
-        case .cloudy:
-            return "overcastClouds_35"
-        case .rainy:
-            return "rain_1_35"
-        case .heavyRainy:
-            return "rain_2_35"
-        case .snowy:
-            return "snowing_35"
-        case .thunderStormy:
-            return "storm_35"
-        case .veryHot:
-            return "hot_35"
-        case .tooCold:
-            return "cold_35"
-        case .windy:
-            return "tornado_35"
-        }
+
+    func imageName(_ size: ImageSize) -> String {
+        return "\(imageName)\(size.imageSuffix)"
     }
 
-    var bigImageName: String {
+    private var imageName: String {
         switch self {
         case .clearSky:
-            return "sun_120"
+            return "sun"
         case .partlyCloudy:
-            return "cloudy_120"
+            return "cloudy"
         case .cloudy:
-            return "overcastClouds_120"
+            return "overcastClouds"
         case .rainy:
-            return "rain_1_120"
+            return "rain_1"
         case .heavyRainy:
-            return "rain_2_120"
+            return "rain_2"
         case .snowy:
-            return "snowing_120"
+            return "snowing"
         case .thunderStormy:
-            return "storm_120"
+            return "storm"
         case .veryHot:
-            return "hot_120"
+            return "hot"
         case .tooCold:
-            return "cold_120"
+            return "cold"
         case .windy:
-            return "tornado_120"
+            return "tornado"
+        }
+    }
+}
+
+extension WeatherConditions {
+    enum ImageSize {
+        case small, big
+
+        var imageSuffix: String {
+            switch self {
+            case .small:
+                return "_35"
+            case .big:
+                return "_120"
+            }
         }
     }
 }

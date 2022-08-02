@@ -15,28 +15,28 @@ struct CityWeatherView: View {
             VStack(alignment: .leading, spacing: 0.0) {
                 HStack {
                     Text(model.cityName)
-                        .font(.system(size: 18, weight: .regular))
+                        .font(.rubik(size: 18))
                     Image("city_pin")
                 }
                 HStack(alignment: .center) {
                     VStack(alignment: .leading, spacing: 8.0) {
-                        Text(model.currentTemperature.stringValue)
-                            .font(.system(size: 64, weight: .regular))
+                        Text(model.currentTemperature.description)
+                            .font(.rubik(size: 64))
                         Group {
                             Text(model.conditions.description)
                             Text(model.date)
                         }
-                        .font(.system(size: 18, weight: .regular))
+                        .font(.rubik(size: 18))
                     }
                     Spacer()
-                    Image(model.conditions.bigImageName)
+                    Image(model.conditions.imageName(.big))
                 }
                 HStack {
-                    Label(model.windSpeed.stringValue, image: "wind")
+                    Label(model.windSpeed.description, image: "wind")
                     Spacer()
                     Label("\(model.humidity) %", image: "humidity")
                     Spacer()
-                    Label("\(String(format: "%.3f", model.pressure)) mBar", image: "pressure")
+                    Label(model.pressure.description, image: "pressure")
                 }
                 .padding(.top, 20)
             }
@@ -56,39 +56,39 @@ struct CityWeatherView_Previews: PreviewProvider {
         CityWeatherView(
             model: CityWeather(
                 cityName: "Taganrog",
-                currentTemperature: Temperature(value: 24, units: .celsius),
+                currentTemperature: Temperature(value: 24, unit: .celsius),
                 conditions: .clearSky,
                 date: "Wednesday July, 6",
-                windSpeed: WindSpeed(value: 1, units: .mps),
+                windSpeed: Speed(value: 1, unit: .metersPerSecond),
                 humidity: 40,
-                pressure: 0.533,
+                pressure: Pressure(value: 0.533, unit: .millibars),
                 dayItems: [
                     WeatherDayItem(
                         dayName: "Monday",
                         date: "July, 4",
-                        temperature: Temperature(value: 24, units: .celsius),
-                        windSpeed: WindSpeed(value: 4, units: .mps),
+                        temperature: Temperature(value: 24, unit: .celsius),
+                        windSpeed: Speed(value: 4, unit: .metersPerSecond),
                         condition: .clearSky
                     ),
                     WeatherDayItem(
                         dayName: "Tuesday",
                         date: "July, 5",
-                        temperature: Temperature(value: 24, units: .celsius),
-                        windSpeed: WindSpeed(value: 4, units: .mps),
+                        temperature: Temperature(value: 24, unit: .celsius),
+                        windSpeed: Speed(value: 4, unit: .metersPerSecond),
                         condition: .clearSky
                     ),
                     WeatherDayItem(
                         dayName: "Wednesday",
                         date: "July, 6",
-                        temperature: Temperature(value: 24, units: .celsius),
-                        windSpeed: WindSpeed(value: 4, units: .mps),
+                        temperature: Temperature(value: 24, unit: .celsius),
+                        windSpeed: Speed(value: 4, unit: .metersPerSecond),
                         condition: .clearSky
                     ),
                     WeatherDayItem(
                         dayName: "Thursday",
                         date: "July, 7",
-                        temperature: Temperature(value: 24, units: .celsius),
-                        windSpeed: WindSpeed(value: 4, units: .mps),
+                        temperature: Temperature(value: 24, unit: .celsius),
+                        windSpeed: Speed(value: 4, unit: .metersPerSecond),
                         condition: .cloudy
                     )
                 ]

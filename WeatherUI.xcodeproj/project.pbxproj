@@ -9,13 +9,18 @@
 /* Begin PBXBuildFile section */
 		8B28143A2873787F0049A247 /* WeatherDayCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2814392873787F0049A247 /* WeatherDayCard.swift */; };
 		8B28143C2873788B0049A247 /* WeatherDayItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B28143B2873788B0049A247 /* WeatherDayItem.swift */; };
-		8B28143E287379520049A247 /* Temperature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B28143D287379520049A247 /* Temperature.swift */; };
-		8B281440287379D80049A247 /* WindSpeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B28143F287379D80049A247 /* WindSpeed.swift */; };
+		8B28143E287379520049A247 /* Units.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B28143D287379520049A247 /* Units.swift */; };
 		8B28144228737B060049A247 /* WeatherConditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B28144128737B060049A247 /* WeatherConditions.swift */; };
 		8B281444287382050049A247 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B281443287382050049A247 /* Colors.xcassets */; };
 		8B281446287382B90049A247 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B281445287382B90049A247 /* Colors.swift */; };
 		8B28144A287385D40049A247 /* CityWeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B281449287385D40049A247 /* CityWeatherView.swift */; };
 		8B28144D287386110049A247 /* CityWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B28144C287386110049A247 /* CityWeather.swift */; };
+		8B41B0F32899B41200DD1B86 /* Rubik-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8B41B0EE2899B41200DD1B86 /* Rubik-SemiBold.ttf */; };
+		8B41B0F42899B41200DD1B86 /* Rubik-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8B41B0EF2899B41200DD1B86 /* Rubik-Light.ttf */; };
+		8B41B0F52899B41200DD1B86 /* Rubik-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8B41B0F02899B41200DD1B86 /* Rubik-Medium.ttf */; };
+		8B41B0F62899B41200DD1B86 /* Rubik-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8B41B0F12899B41200DD1B86 /* Rubik-Bold.ttf */; };
+		8B41B0F72899B41200DD1B86 /* Rubik-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8B41B0F22899B41200DD1B86 /* Rubik-Regular.ttf */; };
+		8B41B0FB2899B55700DD1B86 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B41B0FA2899B55700DD1B86 /* Fonts.swift */; };
 		8B72A8662872343E00F1435D /* WeatherUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B72A8652872343E00F1435D /* WeatherUIApp.swift */; };
 		8B72A8682872343E00F1435D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B72A8672872343E00F1435D /* ContentView.swift */; };
 		8B72A86A2872344200F1435D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B72A8692872344200F1435D /* Assets.xcassets */; };
@@ -25,13 +30,19 @@
 /* Begin PBXFileReference section */
 		8B2814392873787F0049A247 /* WeatherDayCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDayCard.swift; sourceTree = "<group>"; };
 		8B28143B2873788B0049A247 /* WeatherDayItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDayItem.swift; sourceTree = "<group>"; };
-		8B28143D287379520049A247 /* Temperature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Temperature.swift; sourceTree = "<group>"; };
-		8B28143F287379D80049A247 /* WindSpeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindSpeed.swift; sourceTree = "<group>"; };
+		8B28143D287379520049A247 /* Units.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Units.swift; sourceTree = "<group>"; };
 		8B28144128737B060049A247 /* WeatherConditions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherConditions.swift; sourceTree = "<group>"; };
 		8B281443287382050049A247 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		8B281445287382B90049A247 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		8B281449287385D40049A247 /* CityWeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityWeatherView.swift; sourceTree = "<group>"; };
 		8B28144C287386110049A247 /* CityWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityWeather.swift; sourceTree = "<group>"; };
+		8B41B0EE2899B41200DD1B86 /* Rubik-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-SemiBold.ttf"; sourceTree = "<group>"; };
+		8B41B0EF2899B41200DD1B86 /* Rubik-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Light.ttf"; sourceTree = "<group>"; };
+		8B41B0F02899B41200DD1B86 /* Rubik-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Medium.ttf"; sourceTree = "<group>"; };
+		8B41B0F12899B41200DD1B86 /* Rubik-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Bold.ttf"; sourceTree = "<group>"; };
+		8B41B0F22899B41200DD1B86 /* Rubik-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Regular.ttf"; sourceTree = "<group>"; };
+		8B41B0F92899B43100DD1B86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8B41B0FA2899B55700DD1B86 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		8B72A8622872343E00F1435D /* WeatherUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B72A8652872343E00F1435D /* WeatherUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherUIApp.swift; sourceTree = "<group>"; };
 		8B72A8672872343E00F1435D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -62,8 +73,7 @@
 		8B281448287385940049A247 /* Params */ = {
 			isa = PBXGroup;
 			children = (
-				8B28143D287379520049A247 /* Temperature.swift */,
-				8B28143F287379D80049A247 /* WindSpeed.swift */,
+				8B28143D287379520049A247 /* Units.swift */,
 				8B28144128737B060049A247 /* WeatherConditions.swift */,
 			);
 			path = Params;
@@ -88,6 +98,28 @@
 			path = CityWeatherView;
 			sourceTree = "<group>";
 		};
+		8B41B0ED2899B40400DD1B86 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8B41B0F82899B41700DD1B86 /* Fonts */,
+				8B72A8692872344200F1435D /* Assets.xcassets */,
+				8B281443287382050049A247 /* Colors.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8B41B0F82899B41700DD1B86 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				8B41B0F12899B41200DD1B86 /* Rubik-Bold.ttf */,
+				8B41B0EF2899B41200DD1B86 /* Rubik-Light.ttf */,
+				8B41B0F02899B41200DD1B86 /* Rubik-Medium.ttf */,
+				8B41B0F22899B41200DD1B86 /* Rubik-Regular.ttf */,
+				8B41B0EE2899B41200DD1B86 /* Rubik-SemiBold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		8B72A8592872343E00F1435D = {
 			isa = PBXGroup;
 			children = (
@@ -107,12 +139,13 @@
 		8B72A8642872343E00F1435D /* WeatherUI */ = {
 			isa = PBXGroup;
 			children = (
+				8B41B0F92899B43100DD1B86 /* Info.plist */,
 				8B72A8652872343E00F1435D /* WeatherUIApp.swift */,
 				8B28144B287385E50049A247 /* Views */,
 				8B281448287385940049A247 /* Params */,
-				8B72A8692872344200F1435D /* Assets.xcassets */,
-				8B281443287382050049A247 /* Colors.xcassets */,
+				8B41B0ED2899B40400DD1B86 /* Resources */,
 				8B281445287382B90049A247 /* Colors.swift */,
+				8B41B0FA2899B55700DD1B86 /* Fonts.swift */,
 				8B72A86B2872344200F1435D /* Preview Content */,
 			);
 			path = WeatherUI;
@@ -185,8 +218,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B281444287382050049A247 /* Colors.xcassets in Resources */,
+				8B41B0F72899B41200DD1B86 /* Rubik-Regular.ttf in Resources */,
 				8B72A86D2872344200F1435D /* Preview Assets.xcassets in Resources */,
+				8B41B0F42899B41200DD1B86 /* Rubik-Light.ttf in Resources */,
+				8B41B0F52899B41200DD1B86 /* Rubik-Medium.ttf in Resources */,
+				8B41B0F62899B41200DD1B86 /* Rubik-Bold.ttf in Resources */,
 				8B72A86A2872344200F1435D /* Assets.xcassets in Resources */,
+				8B41B0F32899B41200DD1B86 /* Rubik-SemiBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,12 +238,12 @@
 				8B28143C2873788B0049A247 /* WeatherDayItem.swift in Sources */,
 				8B28144D287386110049A247 /* CityWeather.swift in Sources */,
 				8B281446287382B90049A247 /* Colors.swift in Sources */,
-				8B281440287379D80049A247 /* WindSpeed.swift in Sources */,
 				8B72A8682872343E00F1435D /* ContentView.swift in Sources */,
 				8B28144228737B060049A247 /* WeatherConditions.swift in Sources */,
 				8B28143A2873787F0049A247 /* WeatherDayCard.swift in Sources */,
 				8B28144A287385D40049A247 /* CityWeatherView.swift in Sources */,
-				8B28143E287379520049A247 /* Temperature.swift in Sources */,
+				8B41B0FB2899B55700DD1B86 /* Fonts.swift in Sources */,
+				8B28143E287379520049A247 /* Units.swift in Sources */,
 				8B72A8662872343E00F1435D /* WeatherUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -338,6 +376,7 @@
 				DEVELOPMENT_TEAM = 4997473PLP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WeatherUI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -368,6 +407,7 @@
 				DEVELOPMENT_TEAM = 4997473PLP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WeatherUI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

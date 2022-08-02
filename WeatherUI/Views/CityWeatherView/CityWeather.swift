@@ -12,8 +12,8 @@ struct CityWeather {
     let currentTemperature: Temperature
     let conditions: WeatherConditions
     let date: String
-    let windSpeed: WindSpeed
+    let windSpeed: Speed
     let humidity: Int
-    let pressure: Float
+    let pressure: Pressure
     let dayItems: [WeatherDayItem]
 }

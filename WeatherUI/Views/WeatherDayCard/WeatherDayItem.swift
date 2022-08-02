@@ -11,6 +11,6 @@ struct WeatherDayItem: Hashable {
     let dayName: String
     let date: String
     let temperature: Temperature
-    let windSpeed: WindSpeed
+    let windSpeed: Speed
     let condition: WeatherConditions
 }

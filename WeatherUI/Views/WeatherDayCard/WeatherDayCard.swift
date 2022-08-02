@@ -17,15 +17,18 @@ struct WeatherDayCard: View {
                     Text(item.dayName)
                     Text(item.date)
                 }
+                .font(.rubik(size: 14))
                 .foregroundColor(.textPrimary)
                 Spacer()
-                Image(item.condition.imageName)
+                Image(item.condition.imageName(.small))
             }
             Spacer()
             HStack {
-                Text(item.temperature.stringValue)
+                Text(item.temperature.description)
+                    .font(.rubik(size: 18))
                 Spacer()
-                Text(item.windSpeed.stringValue)
+                Text(item.windSpeed.description)
+                    .font(.rubik(size: 14))
             }
             .foregroundColor(.textPrimary)
         }
@@ -48,8 +51,8 @@ struct WeatherDayCell_Previews: PreviewProvider {
                 item: WeatherDayItem(
                     dayName: "Monday",
                     date: "July, 4",
-                    temperature: Temperature(value: 24, units: .celsius),
-                    windSpeed: WindSpeed(value: 4, units: .mps),
+                    temperature: Temperature(value: 24, unit: .celsius),
+                    windSpeed: Speed(value: 4, unit: .metersPerSecond),
                     condition: .clearSky
                 )
             )
@@ -58,8 +61,8 @@ struct WeatherDayCell_Previews: PreviewProvider {
             WeatherDayCard(item: WeatherDayItem(
                 dayName: "Monday",
                 date: "July, 4",
-                temperature: Temperature(value: 24, units: .celsius),
-                windSpeed: WindSpeed(value: 4, units: .mps),
+                temperature: Temperature(value: 24, unit: .celsius),
+                windSpeed: Speed(value: 4, unit: .metersPerSecond),
                 condition: .clearSky)
             )
             .preferredColorScheme(.dark)
